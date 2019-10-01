@@ -3,11 +3,13 @@
 var express = require('express');
 var app = express();
 
+const path = require("path");
+
 app.get('/', function(req, res) {
-  res.sendFile('./docs/index.html');
+  res.sendFile(path.join(__dirname, '/docs/index.html'));
 });
 
-var server = app.listen(8081, function() {
+var server = app.listen(8000, function() {
   var host = server.address().address;
   var port = server.address().port;
 

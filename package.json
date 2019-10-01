@@ -4,6 +4,7 @@
   "description": "action test",
   "main": "index.js",
   "scripts": {
+    "start": "node ./index.js",
     "pretest": "eslint --ignore-path .gitignore .",
     "test": "node ./test/test.js"
   },
